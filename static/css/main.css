@@ -1,0 +1,33 @@
+textarea {
+	color: white;
+	background-color: black;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 100px;  /* Actually the height of select and input */
+	width: 100vw;
+    height: 100vh;
+	font-size: 16px;
+	font-family: 'VT323', monospace;
+	align-self: center;
+	text-shadow: white 0px 0px 10px;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.green {
+		color: #B2F063;
+		text-shadow: #B2F063 0px 0px 10px;
+}
