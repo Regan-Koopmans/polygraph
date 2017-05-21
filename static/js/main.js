@@ -22,6 +22,8 @@ function sendCommand(line) {
 	if (line == "") { return; }
 	$.get( "/command:" + line, function( data ) {
   		addTerminalLine("\n\n" + data + "\n");
+		console.log(data.split("\n")[0])
+		responsiveVoice.speak(data.split("\n")[0].split(" : ")[1].toLowerCase(), 'UK English Male',{pitch: 0.4, rate: 0.7});
 	});
 }
 
